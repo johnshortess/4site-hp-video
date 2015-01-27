@@ -73,6 +73,8 @@
   <div id="overlay-contact-form"></div>
   <div id="overlay-continue"><input type="submit" value="continue" onclick='autoPaused = false; $("#overlay-continue").css("display", "none"); $("#jqjp_video").jPlayer("play");' /></div>
 
+<!--
+
 <style type="text/css">
 #overlay-region-map-cover {
   perspective: 600;
@@ -105,6 +107,7 @@
   margin-top: -600px;
 }
 </style>
+-->
 
 <!--
 #overlay-region-map-cover {
