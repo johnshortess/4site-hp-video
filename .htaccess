@@ -1,0 +1,2 @@
+## This allows CSS PIE to work for CSS3 in ie8 ##
+AddType text/x-component .htc

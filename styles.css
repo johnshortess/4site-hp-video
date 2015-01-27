@@ -1,0 +1,1405 @@
+
+
+@font-face {
+  font-family: 'dosislight';
+  src: url('webfonts/dosis-light-webfont.eot');
+  src: url('webfonts/dosis-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('webfonts/dosis-light-webfont.woff') format('woff'),
+  url('webfonts/dosis-light-webfont.ttf') format('truetype'),
+  url('webfonts/dosis-light-webfont.svg#dosislight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dosisregular';
+  src: url('webfonts/dosis-regular-webfont.eot');
+  src: url('webfonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('webfonts/dosis-regular-webfont.woff') format('woff'),
+  url('webfonts/dosis-regular-webfont.ttf') format('truetype'),
+  url('webfonts/dosis-regular-webfont.svg#dosisregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dosissemibold';
+  src: url('webfonts/dosis-semibold-webfont.eot');
+  src: url('webfonts/dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('webfonts/dosis-semibold-webfont.woff') format('woff'),
+  url('webfonts/dosis-semibold-webfont.ttf') format('truetype'),
+  url('webfonts/dosis-semibold-webfont.svg#dosissemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  border: 0 none transparent;
+  color:#fff;
+  line-height: normal;
+  font: 38px/1.5 'dosisregular', "Helvetica Nueue", Arial, Helvetica, sans-serif !important;
+  letter-spacing: normal;
+  font-weight: normal;
+  overflow-y: hidden;
+  height: auto !important;
+}
+
+p{ margin-bottom: 15px;}
+
+#jqjp_audio {display:none;}
+#jqjp_video {width: 100% !important;
+background: transparent; height: 100vh !important;}
+/*
+video {
+  width: 100% !important; 
+  height: auto !important;
+}
+*/
+
+h3 {
+	margin: 0 0 10px 0;
+}
+
+#jp_video_container {
+  /*display: none;*/
+}
+video {
+    object-fit: cover !important;
+}
+
+.jp-video {
+  position: static;
+  top: 0px;
+  left: 0px;
+}
+
+#jqjp_video #jp_poster_0 {
+    min-height: 100vh !important;
+    min-width:100% !important;
+    height:auto !important;
+    width:auto !important;
+}
+.social-media {
+  position: absolute;
+  left: 525px;
+  top: 300px;
+  width:100px;
+}
+a:active, a:selected, a:visited { 
+	border:none;
+    outline: none;
+}
+.social-media a {
+	display:block;
+	clear:none;
+	float:left;
+	margin-right:6px;
+	background:url('img/social_media_icons.png');
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+
+.social-media a#facebook {
+	background-position:left top;
+}
+.social-media a#twitter {
+	background-position:right top;
+}
+.social-media a#twitter:hover {
+	background-position: right bottom;
+}
+.social-media a#facebook:hover {
+	background-position: left bottom;
+}
+
+div.jp-video-360p {
+    width: 100%;
+}
+
+div.jp-interface, div.jp-title, div.jp-playlist {
+	background: #fff;
+}
+
+div.jp-video div.jp-interface {
+	border-top: 0 none transparent;
+}
+
+div.jp-title, div.jp-playlist {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+}
+div.jp-audio, div.jp-audio-stream, div.jp-video {
+	border: 0 none transparent;
+}
+
+a.jp-video-play-icon {
+	background:url(skin/play-button.png) top left no-repeat;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+}
+
+a.jp-video-play-icon:hover, div.jp-video-play:hover a.jp-video-play-icon {
+	background:url(skin/play-button.png) top right no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+a:link, a:visited {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif
+}
+a:hover, a:active {
+	color: #EF9F21;
+}
+
+p {margin: 10px 0;}
+
+textarea, select, input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="email"], input[type="month"],
+input[type="number"], input[type="password"], input[type="search"],
+input[type="tel"], input[type="text"], input[type="time"],
+input[type="url"], input[type="week"], form input.field {
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fafafa;
+  border: 1px #ddd solid;
+  border-radius: 3px;
+  font-size: inherit;
+  height: auto;
+  outline: 0 none;
+  line-height: 20px;
+  font-size: 17px;
+  padding: 10px 15px;
+  box-shadow: 0 0 0 transparent;
+  max-width: 80%;
+width: 440px;
+  margin: 3px auto;
+  /*&:active, &:focus {
+    border: 1px solid #aaa;
+  }*/
+}
+
+input[type="submit"], .overlay-container a, .video-overlay a {
+  padding:22px 35px;
+  background: #5cb5d4;
+  border-radius:1px;
+  border:0 none transparent;
+  text-decoration: none;
+  text-shadow:0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  color:#fff;
+  font-size: inherit;
+  font-weight: normal;
+  height: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto;
+  float: none;
+  min-width: 250px;
+max-width: 100%;
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.formRow .checkbox {
+  width: auto;
+}
+
+
+input[type="submit"]:hover, input[type="submit"]:active, .overlay-container a:hover, .video-overlay a:hover {
+    background: #47a9cc;
+}
+.formRow {
+  margin-bottom: 10px;
+  clear: both;
+  width: 96%;
+}
+
+.half.first{
+  margin-right:8%;
+}
+
+.half {
+  clear: none;
+  float: left;
+  width: 44%;
+}
+
+.formRow label {
+  color: #333;
+  cursor: text;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px;
+  position: absolute;
+  z-index: 50;
+}
+
+.formRow label.paragraph {
+  color: #333;
+  line-height: 14px;
+  width: 82%;
+  padding-top: 0px;
+}
+
+/*** VIDEO OVERLAYS ***/
+
+#map { width:250px; height:250px; }
+#overlay-region-map-cover { width:250px; height:250px; }
+
+#overlay-region-form {
+  position: absolute; 
+  left: 25%; 
+  top: 30%; 
+  width: 50%;
+  display: none; 
+  z-index: 50;
+  /*background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);*/
+  text-align: center;
+  padding: 20px 0px;
+
+}
+
+#overlay-form-name {
+  padding: 10px;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-form-name-splash, #overlay-form-name {
+  padding: 10px;
+  z-index: 50;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#overlay-form-help-you {
+position: absolute;
+top: 15%;
+width: 120% !important;
+padding: 60px 0 !important;
+left: -10%;
+}
+
+.video-overlay, #overlay-form-name {
+background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+padding: 60px !important;
+}
+
+.overlay-container {
+  z-index: 50;
+ /* background-color: #86c0d9;
+  background-color: rgba(134, 192, 217, 0.75);*/
+  padding: 20px;
+  background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.overlay-container a {
+  font-size: 24px;
+}
+
+#overlay-region-form a {
+  display: inline-block;
+    box-sizing:border-box;
+}
+
+#overlay-superpowers-brad {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-mike {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-riche {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-alexis {
+  position: absolute;
+  left: 8%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-john {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-heming {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-region-map {
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  height:25vh;
+  /*display: none;*/
+  z-index: 50;
+}
+
+#overlay-region-map-cover {
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  height: 25vh;
+  z-index: 51;
+  color: black;
+  background-color: #FFF;
+}
+
+#overlay-contact-form {
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  width: 50%;
+  height: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#overlay-form-contact {
+width: 560px;
+    max-width:100%;
+padding: 60px 30px !important;
+margin: 0 auto;
+    box-sizing:border-box;
+}
+
+#overlay-continue {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  width: auto;
+  height: auto;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-continue input[type="submit"] {
+  float: right;
+}
+
+input {
+box-sizing: border-box;
+}
+
+input:focus {
+outline: none;
+}
+
+/* checkboxes ---------*/
+input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+-webkit-appearance: none;
+cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmarkgray.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+    cursor: pointer;
+  }
+
+input[type="checkbox"]:checked{
+  position: relative
+}
+
+input[type="checkbox"]:checked:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmark.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+  }
+
+.video-contact-form-option {
+  text-align: left;
+  padding-left: 42px;
+margin-left: 8%;
+margin-right: 8%;
+}
+
+.video-contact-form-option label {
+  font-size: 28px;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+
+
+
+@media all and (max-width: 1250px) {
+    
+    body {
+  margin: 0;
+  border: 0 none transparent;
+  color:#fff;
+  line-height: normal;
+  font: 28px/1.4 'dosisregular', "Helvetica Nueue", Arial, Helvetica, sans-serif !important;
+  letter-spacing: normal;
+  font-weight: normal;
+  overflow-y: hidden;
+  height: auto !important;
+}
+
+p{ margin-bottom: 15px;}
+
+#jqjp_audio {display:none;}
+#jqjp_video {width: 100% !important;
+background: transparent; height: 100vh !important;}
+/*
+video {
+  width: 100% !important; 
+  height: auto !important;
+}
+*/
+
+h3 {
+	margin: 0 0 10px 0;
+}
+
+#jp_video_container {
+  /*display: none;*/
+}
+
+.jp-video {
+  position: static;
+  top: 0px;
+  left: 0px;
+}
+
+.social-media {
+  position: absolute;
+  left: 525px;
+  top: 300px;
+  width:100px;
+}
+a:active, a:selected, a:visited { 
+	border:none;
+    outline: none;
+}
+.social-media a {
+	display:block;
+	clear:none;
+	float:left;
+	margin-right:6px;
+	background:url('img/social_media_icons.png');
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+
+.social-media a#facebook {
+	background-position:left top;
+}
+.social-media a#twitter {
+	background-position:right top;
+}
+.social-media a#twitter:hover {
+	background-position: right bottom;
+}
+.social-media a#facebook:hover {
+	background-position: left bottom;
+}
+
+div.jp-video-360p {
+    width: 100%;
+}
+
+div.jp-interface, div.jp-title, div.jp-playlist {
+	background: #fff;
+}
+
+div.jp-video div.jp-interface {
+	border-top: 0 none transparent;
+}
+
+div.jp-title, div.jp-playlist {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+}
+div.jp-audio, div.jp-audio-stream, div.jp-video {
+	border: 0 none transparent;
+}
+
+a.jp-video-play-icon {
+	background:url(skin/play-button.png) top left no-repeat;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+}
+
+a.jp-video-play-icon:hover, div.jp-video-play:hover a.jp-video-play-icon {
+	background:url(skin/play-button.png) top right no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+a:link, a:visited {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif
+}
+a:hover, a:active {
+	color: #EF9F21;
+}
+
+p {margin: 10px 0;}
+
+textarea, select, input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="email"], input[type="month"],
+input[type="number"], input[type="password"], input[type="search"],
+input[type="tel"], input[type="text"], input[type="time"],
+input[type="url"], input[type="week"], form input.field {
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fafafa;
+  border: 1px #ddd solid;
+  border-radius: 3px;
+  font-size: inherit;
+  height: auto;
+  outline: 0 none;
+  line-height: 20px;
+  font-size: 17px;
+  padding: 10px 15px;
+  box-shadow: 0 0 0 transparent;
+  max-width: 80%;
+width: 440px;
+  margin: 3px auto;
+  /*&:active, &:focus {
+    border: 1px solid #aaa;
+  }*/
+}
+
+input[type="submit"], .overlay-container a, .video-overlay a {
+  padding:16px 22px;
+  background: #5cb5d4;
+  border-radius:1px;
+  border:0 none transparent;
+  text-decoration: none;
+  text-shadow:0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  color:#fff;
+  font-size: inherit;
+  font-weight: normal;
+  height: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto;
+  float: none;
+  min-width: 250px;
+max-width: 100%;
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  /*font-size: 35px;*/
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.formRow .checkbox {
+  width: auto;
+}
+
+
+input[type="submit"]:hover, input[type="submit"]:active, .overlay-container a:hover, .video-overlay a:hover {
+    background: #47a9cc;
+}
+.formRow {
+  margin-bottom: 10px;
+  clear: both;
+  width: 96%;
+}
+
+.half.first{
+  margin-right:8%;
+}
+
+.half {
+  clear: none;
+  float: left;
+  width: 44%;
+}
+
+.formRow label {
+  color: #333;
+  cursor: text;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px;
+  position: absolute;
+  z-index: 50;
+}
+
+.formRow label.paragraph {
+  color: #333;
+  line-height: 14px;
+  width: 82%;
+  padding-top: 0px;
+}
+
+/*** VIDEO OVERLAYS ***/
+
+#map { width:250px; height:250px; }
+#overlay-region-map-cover { width:250px; height:250px; }
+
+#overlay-region-form {
+  position: absolute; 
+  left: 25%; 
+  top: 30%; 
+  width: 50%;
+  display: none; 
+  z-index: 50;
+  /*background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);*/
+  text-align: center;
+  padding: 10px 0px;
+
+}
+
+#overlay-form-name {
+  padding: 10px;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-form-name-splash, #overlay-form-name {
+  padding: 10px;
+  z-index: 50;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#overlay-form-help-you {
+position: absolute;
+top: 15%;
+width: 120% !important;
+padding: 20px 0 !important;
+left: -10%;
+}
+
+.video-overlay, #overlay-form-name {
+background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+padding: 10px 20px !important;
+}
+
+.overlay-container {
+  z-index: 50;
+ /* background-color: #86c0d9;
+  background-color: rgba(134, 192, 217, 0.75);*/
+  padding: 20px;
+  background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.overlay-container a {
+  font-size: 24px;
+}
+
+#overlay-region-form a {
+  display: inline-block;
+}
+
+#overlay-superpowers-brad {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-mike {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-riche {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-alexis {
+  position: absolute;
+  left: 8%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-john {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-heming {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-region-map {
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  /*display: none;*/
+  z-index: 50;
+}
+
+#overlay-region-map-cover {
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  z-index: 51;
+  color: black;
+  background-color: #FFF;
+}
+
+#overlay-contact-form {
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  width: 50%;
+  height: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#overlay-form-contact {
+width: 560px;
+padding: 20px 10px !important;
+margin: 0 auto;
+    
+}
+
+#overlay-continue {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  width: auto;
+  height: auto;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-continue input[type="submit"] {
+  float: right;
+}
+
+input {
+box-sizing: border-box;
+}
+
+input:focus {
+outline: none;
+}
+
+/* checkboxes ---------*/
+input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+-webkit-appearance: none;
+cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmarkgray.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+    cursor: pointer;
+  }
+
+input[type="checkbox"]:checked{
+  position: relative
+}
+
+input[type="checkbox"]:checked:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmark.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+  }
+
+.video-contact-form-option {
+  text-align: left;
+  padding-left: 42px;
+margin-left: 8%;
+margin-right: 8%;
+}
+
+.video-contact-form-option label {
+  font-size: 28px;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+    
+}
+
+
+@media all and (max-width: 720px) {
+    
+    body {
+  margin: 0;
+  border: 0 none transparent;
+  color:#fff;
+  line-height: normal;
+  font: 17px/1.2 'dosisregular', "Helvetica Nueue", Arial, Helvetica, sans-serif !important;
+  letter-spacing: normal;
+  font-weight: normal;
+  overflow-y: hidden;
+  height: 700px !important;
+        -ms-word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+p{ margin-bottom: 15px;}
+
+#jqjp_audio {display:none;}
+#jqjp_video {width: 100% !important;
+background: transparent; height: 100vh !important;}
+/*
+video {
+  width: 100% !important; 
+  height: auto !important;
+}
+*/
+
+h3 {
+	margin: 0 0 10px 0;
+}
+
+#jp_video_container {
+  /*display: none;*/
+}
+
+.jp-video {
+  position: static;
+  top: 0px;
+  left: 0px;
+}
+
+.social-media {
+  position: absolute;
+  left: 525px;
+  top: 300px;
+  width:100px;
+}
+a:active, a:selected, a:visited { 
+	border:none;
+    outline: none;
+}
+.social-media a {
+	display:block;
+	clear:none;
+	float:left;
+	margin-right:6px;
+	background:url('img/social_media_icons.png');
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+
+.social-media a#facebook {
+	background-position:left top;
+}
+.social-media a#twitter {
+	background-position:right top;
+}
+.social-media a#twitter:hover {
+	background-position: right bottom;
+}
+.social-media a#facebook:hover {
+	background-position: left bottom;
+}
+
+div.jp-video-360p {
+    width: 100%;
+}
+
+div.jp-interface, div.jp-title, div.jp-playlist {
+	background: #fff;
+}
+
+div.jp-video div.jp-interface {
+	border-top: 0 none transparent;
+}
+
+div.jp-title, div.jp-playlist {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+}
+div.jp-audio, div.jp-audio-stream, div.jp-video {
+	border: 0 none transparent;
+}
+
+a.jp-video-play-icon {
+	background:url(skin/play-button.png) top left no-repeat;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+}
+
+a.jp-video-play-icon:hover, div.jp-video-play:hover a.jp-video-play-icon {
+	background:url(skin/play-button.png) top right no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+a:link, a:visited {
+	color: #2088B3;
+	font-family: 'dosisregular', Arial, Helvetica, sans-serif
+}
+a:hover, a:active {
+	color: #EF9F21;
+}
+
+p {margin: 10px 0;}
+
+textarea, select, input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="email"], input[type="month"],
+input[type="number"], input[type="password"], input[type="search"],
+input[type="tel"], input[type="text"], input[type="time"],
+input[type="url"], input[type="week"], form input.field {
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fafafa;
+  border: 1px #ddd solid;
+  border-radius: 3px;
+  font-size: inherit;
+  height: auto;
+  outline: 0 none;
+  line-height: 20px;
+  font-size: 17px;
+  padding: 10px 15px;
+  box-shadow: 0 0 0 transparent;
+  max-width: 80%;
+width: 440px;
+  margin: 3px auto;
+  /*&:active, &:focus {
+    border: 1px solid #aaa;
+  }*/
+}
+
+input[type="submit"], .overlay-container a, .video-overlay a {
+  padding:16px 22px;
+  background: #5cb5d4;
+  border-radius:1px;
+  border:0 none transparent;
+  text-decoration: none;
+  text-shadow:0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  color:#fff;
+  font-size: inherit;
+  font-weight: normal;
+  height: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto;
+  float: none;
+  min-width: 0;
+max-width: 100%;
+  font-family: 'dosisregular', Arial, Helvetica, sans-serif;
+  /*font-size: 35px;*/
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.formRow .checkbox {
+  width: auto;
+}
+
+
+input[type="submit"]:hover, input[type="submit"]:active, .overlay-container a:hover, .video-overlay a:hover {
+    background: #47a9cc;
+}
+.formRow {
+  margin-bottom: 10px;
+  clear: both;
+  width: 96%;
+}
+
+.half.first{
+  margin-right:8%;
+}
+
+.half {
+  clear: none;
+  float: left;
+  width: 44%;
+}
+
+.formRow label {
+  color: #333;
+  cursor: text;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px;
+  position: absolute;
+  z-index: 50;
+}
+
+.formRow label.paragraph {
+  color: #333;
+  line-height: 14px;
+  width: 82%;
+  padding-top: 0px;
+}
+
+/*** VIDEO OVERLAYS ***/
+
+#map { width:250px; height:250px; }
+#overlay-region-map-cover { width:250px; height:250px; }
+
+#overlay-region-form {
+  position: absolute; 
+  left: 25%; 
+  top: 30%; 
+  width: 50%;
+  display: none; 
+  z-index: 50;
+  /*background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);*/
+  text-align: center;
+  padding: 10px 0px;
+
+}
+
+#overlay-form-name {
+  padding: 10px;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-form-name-splash, #overlay-form-name {
+  padding: 10px;
+  z-index: 50;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#overlay-form-help-you {
+position: absolute;
+top: 15%;
+width: 120% !important;
+padding: 20px 0 !important;
+left: -10%;
+}
+
+.video-overlay, #overlay-form-name {
+background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+padding: 10px 20px !important;
+}
+
+.overlay-container {
+  z-index: 50;
+ /* background-color: #86c0d9;
+  background-color: rgba(134, 192, 217, 0.75);*/
+  padding: 20px;
+  background-color: #555555;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.overlay-container a {
+  font-size: 24px;
+}
+
+#overlay-region-form a {
+  display: inline-block;
+}
+
+#overlay-superpowers-brad {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-mike {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-riche {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-alexis {
+  position: absolute;
+  left: 8%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-john {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-superpowers-heming {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  width: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+}
+
+#overlay-region-map {
+  display:none !important;
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  z-index: 50;
+}
+
+#overlay-region-map-cover {
+  display: none !important;
+  position: absolute;
+  left: 0px;
+  top: 25vh;
+  z-index: 51;
+  color: black;
+  background-color: #FFF;  
+}
+
+#overlay-contact-form {
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  width: 70%;
+  height: auto;
+  display: none;
+  z-index: 50;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#overlay-form-contact {
+  width: 560px;
+  max-width:100%;
+  padding: 20px 10px !important;
+  margin: 0 auto;
+  box-sizing:border-box;
+  position:absolute;
+  bottom:0;
+}
+
+#overlay-continue {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  width: auto;
+  height: auto;
+  display: none;
+  z-index: 50;
+}
+
+#overlay-continue input[type="submit"] {
+  float: right;
+}
+
+input {
+box-sizing: border-box;
+}
+
+input:focus {
+outline: none;
+}
+
+/* checkboxes ---------*/
+input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+-webkit-appearance: none;
+cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmarkgray.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+    cursor: pointer;
+  }
+
+input[type="checkbox"]:checked{
+  position: relative
+}
+
+input[type="checkbox"]:checked:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/checkmark.png") center center no-repeat #fff;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+    top: -25px;
+    left: -35px;
+  }
+
+.video-contact-form-option {
+  text-align: left;
+  padding-left: 42px;
+margin-left: 8%;
+margin-right: 8%;
+}
+
+.video-contact-form-option label {
+  font-size: 28px;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+    
+}
+
+@media all and (min-width:721px) and (max-width: 1250px) {
+    #overlay-form-contact {
+        line-height:2;
+    }
+}
