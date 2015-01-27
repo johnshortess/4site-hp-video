@@ -49,7 +49,9 @@
   <div id="overlay-region-form">
     <?php include "overlays/name_form/overlay.php"; ?>
   </div>
-    <!--  <div id="overlay-region-map-cover" style="display: none;">
+ 
+  <!--  
+  <div id="overlay-region-map-cover" style="display: none;">
 
     <div class="card">
       <h3>Map of route from metro to 4Site</h3>
@@ -58,6 +60,7 @@
     </div>
   </div>
   -->
+
   <div id="overlay-region-map" style="display: none;"><div id='map' class='dark'></div></div>
   <div id="overlay-superpowers-brad" class="overlay-container"></div>
   <div id="overlay-superpowers-riche" class="overlay-container"></div>
