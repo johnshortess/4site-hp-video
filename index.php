@@ -17,6 +17,7 @@
   <script type="text/javascript" src="js/popcorn.jplayer.js"></script>
   <script type="text/javascript" src="js/formfields.js"></script>
   <script type="text/javascript" src="js/4site-video.js"></script>
+
   <!--
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,6 +29,7 @@
     ga('send', 'pageview');  
   </script>
   -->
+  
 </head>
 
 <body>
