@@ -43,6 +43,8 @@
     </div>    
   </div>
 
+  <!-- Just a test; put this in via git local -->
+
   <div id="jqjp_audio" class="jp-jplayer"></div> 
   <div id="jp_audio_container" class="jp-audio">
     <div class="jp-type-single"></div>
@@ -73,6 +75,8 @@
   <div id="overlay-superpowers-mike" class="overlay-container"></div>
   <div id="overlay-contact-form"></div>
   <div id="overlay-continue"><input type="submit" value="continue" onclick='autoPaused = false; $("#overlay-continue").css("display", "none"); $("#jqjp_video").jPlayer("play");' /></div>
+
+<!--
 
 <style type="text/css">
 #overlay-region-map-cover {
@@ -106,6 +110,7 @@
   margin-top: -600px;
 }
 </style>
+-->
 
 <!--
 #overlay-region-map-cover {
