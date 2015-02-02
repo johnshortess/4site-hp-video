@@ -65,9 +65,6 @@
     </div>
   </div>
   -->
-  <!-- MIKE WAS HERE -->
-  <!-- MIKE WAS HERE --> 
-  <!-- MIKE WAS HERE --> 
     
   <div id="overlay-region-map" style="display: none;"><div id='map' class='dark'></div></div>
   <div id="overlay-superpowers-brad" class="overlay-container"></div>
